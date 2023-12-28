@@ -1,0 +1,63 @@
+/* @media screen and (max-width: 100vh) {
+    .main-card {
+        left: calc(10vh + (10vh));
+    }
+} */
+
+@font-face { 
+    font-family: ShinShin; 
+    src: url('ShinShin.woff2'); 
+} 
+
+* {
+    font-family: ShinShin;
+}
+
+.background {
+    position: fixed;
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    filter: blur(10px);
+    background-image: url("single_light 16by9.jpg");
+    background-size: cover;
+}
+
+.main-card {
+    position: fixed;
+    height: 80vh;
+    width: calc((80vh / 9) * 16);
+    top: 10vh;
+    left: 10vh;
+    background-image: url("single_light 16by9.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    border: 10px solid white;
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.character-select {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    height: 48px;
+    width: 192px;
+    font-size: 16px;
+    border: unset;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* .character-constellation {
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    left: calc(50% - 10vh);
+    top: calc(50% - 10vh);
+    filter: drop-shadow(5px 5px 5px 5px rgba(0, 0, 0, 0.3));
+} */
+
