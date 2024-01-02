@@ -6,5 +6,5 @@
 - On Visual Studio Code: You can do quick testing with the `Go Live` extension.
 - For normal usage: click on `index.html` to preview the project.
 ## Developer notes
-- You may use `scrape.js` to reset any asset changes by pulling all of the default assets from the Fandom sources again. this require you to install the required dependencies for it to work.
+- You may use `scrape.js` to reset any asset changes by pulling all of the default assets from the Fandom sources again. This require you to install the required dependencies for it to work.
 
