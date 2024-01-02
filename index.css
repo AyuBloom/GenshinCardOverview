@@ -11,6 +11,9 @@
 
 * {
     font-family: ShinShin;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 .background {
@@ -25,12 +28,14 @@
 }
 
 .main-card {
+    overflow: hidden;
     position: fixed;
     height: 80vh;
     width: calc((80vh / 9) * 16);
     top: 10vh;
     left: 10vh;
-    background-image: url("single_light 16by9.jpg");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, transparent 50%), 
+                      url("single_light 16by9.jpg");
     background-size: cover;
     border-radius: 10px;
     border: 10px solid white;
@@ -52,12 +57,134 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* .character-constellation {
+.character-constellation {
     position: absolute;
-    width: 20vh;
-    height: 20vh;
-    left: calc(50% - 10vh);
-    top: calc(50% - 10vh);
-    filter: drop-shadow(5px 5px 5px 5px rgba(0, 0, 0, 0.3));
+    display: block;
+    width: 40vh;
+    height: 40vh;
+    /* left: calc(50% - 20vh); */
+    right: 5vh;
+    top: calc(50% - 25vh);
+    opacity: 0;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.character-constellation-name {
+    position: absolute;
+    display: block;
+    width: 40vh;
+    /* left: calc(50% - 20vh); */
+    right: calc(17.5% - 20vh);
+    bottom: calc(20vh);
+    opacity: 0;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 5px black);
+    color: white;
+    text-align: center;
+}
+
+.character-full-body {
+    position: absolute;
+    height: 80vh;
+    right: -55vh;
+    bottom: 0px;
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.character-main {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    height: calc(5vh + 0px);
+    bottom: 7.5vh;
+    right: 0px;
+    z-index: 3;
+    padding: 5px 50px 5px 70px;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 20%);
+}
+
+.element {
+    width: 5vh;
+    height: 5vh;
+    display: inline-block;
+}
+
+.Anemo {
+    background: url(assets/elements/Anemo.svg);
+}
+
+.Geo {
+    background: url(assets/elements/Geo.svg);
+}
+
+.Electro {
+    background: url(assets/elements/Electro.svg);
+}
+
+.Dendro {
+    background: url(assets/elements/Dendro.svg);
+}
+
+.Hydro {
+    background: url(assets/elements/Hydro.svg);
+}
+
+.Pyro {
+    background: url(assets/elements/Pyro.svg);
+}
+
+.Cryo {
+    background: url(assets/elements/Cryo.svg);
+}
+
+/* .emblem {
+    width: 5vh;
+    height: 5vh;
+    display: inline-block;
 } */
+
+.Mondstadt {
+    background: url(assets/emblems/Mondstadt.webp);
+}
+
+.Liyue {
+    background: url(assets/emblems/Liyue.webp);
+}
+
+.Inazuma {
+    background: url(assets/emblems/Inazuma.webp);
+}
+
+.Sumeru {
+    background: url(assets/emblems/Sumeru.webp);
+}
+
+.Fontaine {
+    background: url(assets/emblems/Fontaine.webp);
+}
+
+.Natlan {
+    background: url(assets/emblems/Natlan.webp);
+}
+
+.Snezhnaya {
+    background: url(assets/emblems/Snezhnaya.webp);
+}
+
+.character-name {
+    filter: drop-shadow(5px 5px 0px black);
+    font-size: 4.5vh;
+    color: white;
+    margin-left: 1vh;
+}
+
+.notes {
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
+    z-index: 3;
+    opacity: 0.3;
+}
 
